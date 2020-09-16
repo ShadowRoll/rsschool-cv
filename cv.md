@@ -7,3 +7,4 @@
 6. **Work experience:** At this moment I have no programming experience, but I learning courses RS School. I study such programs as GitHub, Codewars and other.
 7. **Education:** I have high education and ended Belarussian National Technical University in 2015.
 8. **English language level:** A2+ 
+
