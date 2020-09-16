@@ -1,6 +1,6 @@
 # My CV
 1. **Name and surname:** Ilya Rakhovich
-2. **Phone number:** +(37544)591-17-92
+2. **Phone number:** +37544 591-17-92
 3. **Info about me:** My main goal at this moment is to learn the programming language JavaScript. I want learn and rise my knowledges in this area.  
 4. **Skills:** HTML, CSS.
 5. **Projects:** All my projects you can see on my [GitHub account](https://github.com/ShadowRoll).
