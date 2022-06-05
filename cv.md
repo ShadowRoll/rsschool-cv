@@ -29,6 +29,6 @@ Programmer by profession - **none**.
 [My CV project on the GitHub](https://github.com/ShadowRoll/rsschool-cv/blob/gh-pages/CV.md)
 
 ##Education
-I have high education. Graduated from the Belarussian National Technical University in 2016.
+I have high education. Graduated from the Belarussian National Technical University in 2015.
 ##English knowledge
 Level - **A2**
