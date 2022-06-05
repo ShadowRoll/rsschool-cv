@@ -8,7 +8,7 @@
 - Mail: ilya_rahovich@mail.ru
 
 ##About me
-    Hi all. My name is Ilya Rakhovich. I am beginner in this area. My goal is to take new knowledge and experience in order to further connect my life with this profession.
+    I am beginner in this area. My goal is to take new knowledge and experience in order to further connect my life with this profession.
     
 ##Skills
 I have basics knowledges 
