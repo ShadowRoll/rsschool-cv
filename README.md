@@ -1,1 +1,1 @@
-# https://shadowroll.github.io/rsschool-cv/
+# https://shadowroll.github.io/rsschool-cv/index.html
