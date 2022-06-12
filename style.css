@@ -1,5 +1,13 @@
-.background {
-	background: url(img/background.jpg);
+hr {
+	width: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 0;
+	padding: 0
 }
 .head {
 	width: 90%;
@@ -10,6 +18,12 @@
 	border-radius: 10px;
 	border: solid;
 	border-color: gray;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	background: url(img/background.jpg);
 }
 
 .main {
@@ -51,7 +65,7 @@
 	text-shadow: black 0 0 2px;
 }
 
-.footer {
+footer {
 	width: 100%;
 	height: 100%;
 	margin-left: auto;
@@ -136,7 +150,7 @@ H3 {
 .bgcode {
 	background-color:#f0f0f0;
 	width: 270px;
-	height: 70px;
+	height: 100px;
 	margin-left: 150px;
 }
 
