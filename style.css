@@ -1,14 +1,9 @@
+
 hr {
 	width: 100%;
 }
 
-.wrapper {
-	width: 100%;
-	margin-left: auto;
-	margin-right:auto;
-	margin-top: 0;
-	padding: 0
-}
+
 .head {
 	width: 90%;
 	height: 100px;
@@ -21,12 +16,16 @@ hr {
 }
 
 body {
-	width: 100%;
-	margin: 0;
 	background: url(img/background.jpg);
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 0;
+	padding: 0
+
 }
 
-.main {
+.box1 {
 	width: 45%;
 	margin-left: 650px;
 	margin-right: auto;
@@ -40,7 +39,7 @@ body {
 	
 }
 
-.main2 {
+.box2 {
 	width: 45%;
 	margin-left: 30px;
 	margin-top: 5px;
@@ -52,7 +51,7 @@ body {
 	text-shadow: black 0 0 2px;
 }
 
-.main3 {
+.box3 {
 	width: 45%;
 	margin-left: 650px;
 	margin-right: 60px;
@@ -126,6 +125,30 @@ H3 {
 	text-align: center;
 	
 }
+
+ul {
+	font-family: TimesNewRoman, Times, sans-serif;
+	font-size: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: black;
+	text-align: left;
+	
+}
+
+li {
+	font-family: TimesNewRoman, Times, sans-serif;
+	font-size: 20px;
+	margin-left:20px;
+	margin-right:auto;
+	padding-left: auto;
+	padding-right: auto;
+	color: black;
+	text-align: center;
+}
+
 .space {
 	height: 50px;
 	
@@ -178,7 +201,7 @@ H3 {
 
 .rss {
 
-	background-image: url(img/logo-rs.svg) no-repeat 100% 0;
-	background-size: 128px; 128px;
+	width: 128px;
+	height: 128px;
 	
 }
