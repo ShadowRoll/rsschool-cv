@@ -1,2 +1,2 @@
 # rsschool-cv
-# https://shadowroll.github.io/rsschool-cv/travel/
+# https://shadowroll.github.io/rsschool-cv/cv/
