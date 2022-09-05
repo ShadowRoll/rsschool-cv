@@ -36,6 +36,8 @@
                 </div>
                 <div class="code">
                     <div class="codeScreen"></div>
+                    <div class="codeText"><h2>Code example: change quotes</h2></div>
+                </div>
             </div>
             <div class="infoDescription">
                 <div class="aboutMeDescription">
@@ -51,15 +53,32 @@
                 <div><h2>Skills</h2></div>
                 <div><span>I have basics knowledges:</span></div>
                     <ul class="ulSkills"> 
-                        <li>HTML5 (HyperText Markup Language, version 5)</li>
-                        <li>CSS3 (Cascading Style Sheets, version 3)</li>
-                        <li>JS (JavaScript)</li>
+                        <li><b>HTML5</b> <i>(HyperText Markup Language, version 5)</i></li>
+                        <li><b>CSS3</b> <i>(Cascading Style Sheets, version 3)</i></li>
+                        <li><b>JS</b> <i>(JavaScript)</i></li>
                     </ul>
                 </div>
-            </div>
-            <div class="codeDescription">
-
-            </div> 
+                <div class="codeDescription">
+                    <div><h2>Code example</h2></div>
+                        <code>
+                        async function getQuotes() { <br>
+                            const quotes = 'https://api.quotable.io/random';<br>
+                            const res = await fetch(quotes);<br>
+                            const data = await res.json(); <br>
+                            <br>
+                            quote.textContent = `${(data.content)}`;<br>
+                            author.textContent = `${(data.author)}`;<br>
+                          }<br>
+                          getQuotes();<br>
+                          <br>
+                          quote.addEventListener('change', function(){<br>
+                            getQuotes()<br>
+                          });<br>
+                          changeQuote.addEventListener('click', function(){<br>
+                            getQuotes()<br>
+                          });<br>
+                    </code>
+                </div> 
             </div>
 
     </main>

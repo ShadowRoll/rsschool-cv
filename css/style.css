@@ -141,6 +141,7 @@ h1 {
 h2 {
     font-family: "Binerka";
     font-size: 24px;
+    text-align: center;
 }
 
 .skills {
@@ -195,14 +196,14 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 650px;
+    width: 670px;
     height: 750px;
     /background-color: red;
-    margin: 80px 0px 0px 100px;
+    margin: 80px 0px 0px 40px;
 }
 
 .codeDescription {
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 500px;
     height: 750px;
@@ -213,10 +214,22 @@ h2 {
 
 .codeScreen{
     display: flex;
-    width: 550px;
-    height: 500px;
+    width: 450px;
+    height: 230px;
     background-image: url(../img/codeExample.jpg);
     background-size: 450px;
     background-repeat: no-repeat;
-    border-radius: 10px;      
+    border-radius: 10px 10px;
+    margin-left: 70px;      
+    background-color: red;
+}
+
+.codeText {
+    display: flex;
+    margin-left: 60px;
+}
+
+code {
+    font-size: 18px;
+    text-align:left;
 }
