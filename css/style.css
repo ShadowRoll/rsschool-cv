@@ -382,7 +382,7 @@ text-decoration:none;
 }
 
 .education {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -393,7 +393,7 @@ text-decoration:none;
 }
 
 .educationDescription {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 500px;
     height: 750px;
@@ -440,4 +440,36 @@ text-decoration:none;
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-left: 60px;
+}
+
+.engLevel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+    height: 750px;
+/background-color: red;
+    margin: 80px 0px 0px 80px;
+}
+
+.engLevelDescription {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+.engLevelImage{
+    display: flex;
+    width: 400px;
+    height: 240px;
+    background-image: url(../img/engLevel.jpg);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-left: 20px;
 }
