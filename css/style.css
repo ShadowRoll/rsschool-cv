@@ -5,10 +5,15 @@
     font-weight: normal; 
     } 
 
+html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
 .body {
     display: flex;
     flex-direction: column;
-    height: 1500px;
+    height: 1100px;
     width: 1300px;
     margin: 0 auto;
 }
@@ -72,7 +77,7 @@ li {
 
 .main {
     display: flex;
-    height: 1500px;
+    height: 888px;
     width: 1300px;
 background-color: black;
 }
@@ -81,7 +86,6 @@ background-color: black;
     display: flex;
     width: 1300px;
     height: 1000px;
-background-color: blue;
     background-image: url(../img/background1.png);
     background-size: 1300px;
     background-repeat: no-repeat ;
@@ -89,6 +93,7 @@ background-color: blue;
 
 .info {
     display: flex;
+    height: 1000px;
     width: 670px;
 /background-color: black;
 
@@ -97,6 +102,7 @@ background-color: blue;
 
 .infoDescription {
     display: flex;
+    height: 1000px;
     width: 630px;
     font-family: "Binerka";
     font-size: 18px;
@@ -120,7 +126,8 @@ background-color: blue;
     background-image: url(../img/photo.jpg);
     background-size: 300px;
     background-repeat: no-repeat;
-    border-radius: 150px;      
+    border-radius: 150px;
+    box-shadow: 1px 1px 20px 15px white;      
 }
 
 .aboutMeDescription {
@@ -220,7 +227,8 @@ h2 {
     background-size: 450px;
     background-repeat: no-repeat;
     border-radius: 10px 10px;
-    margin-left: 70px;      
+    margin-left: 70px;
+    box-shadow: 1px 1px 20px 15px white;      
 }
 
 .codeText {
@@ -367,7 +375,7 @@ text-decoration:none;
     display: inline;
     font-family: "Binerka";
     font-size: 24px;
-    color: white;
+    color: black;
     margin-left: 50px;
     margin-top: 10px;
 }
@@ -376,7 +384,7 @@ text-decoration:none;
     display: inline;
     font-family: "Binerka";
     font-size: 24px;
-    color: white;
+    color: black;
     margin-left: 50px;
     margin-top: 10px;
 }
@@ -413,11 +421,12 @@ text-decoration:none;
 .bntuImage{
     display: flex;
     width: 250px;
-    height: 300px;
+    height: 280px;
     background-image: url(../img/bntuLogo.png);
     background-size: 250px;
     background-repeat: no-repeat;
     margin-left: 60px;
+    box-shadow: 1px 1px 20px 15px white;
 }
 
 .rsschoolImage{
@@ -429,6 +438,7 @@ text-decoration:none;
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-left: 60px;
+    box-shadow: 1px 1px 20px 15px white;
 }
 
 .epamImage {
@@ -440,6 +450,7 @@ text-decoration:none;
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-left: 60px;
+    box-shadow: 1px 1px 20px 15px white;
 }
 
 .engLevel {
@@ -472,4 +483,107 @@ text-decoration:none;
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-left: 20px;
+    box-shadow: 1px 1px 20px 15px white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300;
+    height: 112px;
+    background-color: black;
+    color: white;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 90px;
+    width: 1000px;
+    font-family: "Binerka";
+    font-size: 36px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.phoneLogoContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    height: 20px;
+    width: 200px;
+    margin-left: 0px;
+}
+
+.phoneLogo{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/phone.png);
+}
+
+.phoneNumber {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.discordLogo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/discord.png);
+}
+
+.discordLogo:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+.mailLogo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/mail.png);
+    background-size: 60px;
+}
+
+.mailLogo:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+.telegramLogo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/telegram.png);
+}
+
+.telegramLogo:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+.gitHubLogo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/github.png);
+}
+
+.gitHubLogo:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
 }
