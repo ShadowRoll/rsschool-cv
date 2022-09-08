@@ -11,15 +11,15 @@
     <header class="header">
         <div class="gitLogo"></div>
         <nav class="ulContainer">
-            <ul>
-                <li>About me</li>
-                <li>Skills</li>
-                <li>Code example</li>
-                <li>Work experience</li>
-                <li>Projects</li>
-                <li>Education</li>
-                <li>English knowleges</li>
-                <li>Contacts</li>
+            <ul class="ulList">
+                <li id="aboutMe">About me</li>
+                <li id="skill">Skills</li>
+                <li id="code">Code example</li>
+                <li id="work">Work experience</li>
+                <li id="projects">Projects</li>
+                <li id="education">Education</li>
+                <li id="engLvl">English knowleges</li>
+                <li id="contacts">Contacts</li>
             </ul>
         </nav>
     </header>
@@ -27,21 +27,21 @@
     <main class="main">
         <div class="mainContainer">
             <div class="info">
-                <div class="aboutMe">
+                <div class="aboutMe active" id="mainInfo">
                     <div class="aboutMePhoto"></div>
                     <div><h1>Ilya Rakhovich</h1></div>
                 </div>
-                <div class="skills">
+                <div class="skills" id="mainInfo">
                     <div class="langLogo"></div>
                 </div>
-                <div class="code">
+                <div class="code" id="mainInfo">
                     <div class="codeScreen"></div>
                     <div class="codeText"><h2>Code example: change quotes</h2></div>
                 </div>
-                <div class="work">
+                <div class="work" id="mainInfo">
                     <div class="workLogo"></div>
                 </div>
-                <div class="projects">
+                <div class="projects" id="mainInfo">
                     <div class="slider">
                         <div class="leftButton">
                             <div class="leftButtonLogo"></div>
@@ -53,7 +53,7 @@
                     <div class="textTravel">Travel</div>
                     <div class="textMomentum">Momentum</div>
                 </div>
-                <div class="education">
+                <div class="education" id="mainInfo">
                     <div class="textEducation"><h2>Belarusian National Technical University</h2></div>
                     <div class="bntuImage"></div>
                     <div class="textEducation"><h2>RS Pre-School</h2></div>
@@ -61,14 +61,14 @@
                     <div class="textEducation"><h2>Epam Git Training</h2></div>
                     <div class="epamImage"></div>
                 </div>
-                <div class="engLevel">
+                <div class="engLevel" id="mainInfo">
                     <div class="engLevelImage"></div>
                     <div><h2>English knowledges</h2></div>
                 </div>
             </div>
 
             <div class="infoDescription">
-                <div class="aboutMeDescription">
+                <div class="aboutMeDescription active" id="description">
                     <div><h2>About me</h2></div>
                     <div>
                         <span>
@@ -77,7 +77,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="skillsDescription">
+                <div class="skillsDescription" id="description">
                 <div><h2>Skills</h2></div>
                 <div><span>I have basics knowledges:</span></div>
                     <ul class="ulSkills"> 
@@ -86,7 +86,7 @@
                         <li><b>JS</b> <i>(JavaScript)</i></li>
                     </ul>
                 </div>
-                <div class="codeDescription">
+                <div class="codeDescription" id="description">
                     <div><h2>Code example</h2></div>
                         <code>
                         async function getQuotes() { <br>
@@ -107,7 +107,7 @@
                           });<br>
                     </code>
                 </div> 
-                <div class="workDescription">
+                <div class="workDescription" id="description">
                     <div><h2>Work experience</h2></div>
                     <div>
                         <p>From 2016 to the present, I have been working in a large Belarusian company "BELAZ".</p>
@@ -115,14 +115,14 @@
                         <p>I have no experience in programming, but I want to fix this as soon as possible.</p>
                     </div>
                 </div>
-                <div class="projectsDescription">
+                <div class="projectsDescription" id="description">
                     <div><h2>Projects:</h2></div>
                         <ol class="olList">
                             <li><a href ="https://rolling-scopes-school.github.io/shadowroll-JSFEPRESCHOOL2022Q2/travel/">Travel</a></li>
                             <li><a href="https://rolling-scopes-school.github.io/shadowroll-JSFEPRESCHOOL2022Q2/momentum/">Momentum</a></li>
                         </ol>
                 </div>
-                <div class="educationDescription">
+                <div class="educationDescription" id="description">
                     <div><h2>Education</h2></div>
                     <div>
                         <p>I have high education. Graduated from the Belarussian National Technical University in 2016.</p>
@@ -130,7 +130,7 @@
                         <p>Completed Git Training (Epam) in September, 2022</p>
                     </div>
                 </div>
-                <div class="engLevelDescription">
+                <div class="engLevelDescription" id="description">
                     <div><h2>English knowledges</h2></div>
                     <div>
                         <p>English level by <a href="https://www.efset.org/">EF SET </a>(15 min test)</p>
@@ -139,7 +139,7 @@
             </div>
 
     </main>
-    <footer class="footer">
+    <footer class="footer" id="#contacts">
         <div class="contactsContainer">    
                 <div class="logoContainer">
                 <div class="phoneLogoContainer">
@@ -156,5 +156,6 @@
             </div>
         </div>
     </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

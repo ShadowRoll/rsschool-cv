@@ -45,6 +45,9 @@ ul {
     margin-top: 0px; 
     
 }
+.ulList{
+list-style-type: none;
+}
 
 li {
     display: inline-block;
@@ -55,7 +58,12 @@ li {
     font-size: 26px;
     text-align: center;
     margin-left: -40px;
+}
 
+li:hover{
+    transform: scale(1.1);
+    text-shadow: 10px 10px 10px 10px;
+    cursor: pointer;
 }
 
 .gitLogo {
@@ -95,8 +103,6 @@ background-color: black;
     display: flex;
     height: 1000px;
     width: 670px;
-/background-color: black;
-
 
 }
 
@@ -110,12 +116,15 @@ background-color: black;
 
 .aboutMe {
     display: none;
+}
+
+.aboutMe.active {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 650px;
     height: 750px;
-/background-color: red;
     margin: 80px 0px 0px 100px;
 }
 
@@ -127,11 +136,15 @@ background-color: black;
     background-size: 300px;
     background-repeat: no-repeat;
     border-radius: 150px;
-    box-shadow: 1px 1px 20px 15px white;      
+    box-shadow: 1px 1px 20px 15px white;
 }
 
 .aboutMeDescription {
     display: none;
+}
+
+.aboutMeDescription.active {
+    display: flex;
     flex-direction: column;
     width: 500px;
     height: 750px;
@@ -153,12 +166,15 @@ h2 {
 
 .skills {
     display: none;
+}
+
+.skills.active {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 650px;
     height: 750px;
-/background-color: red;
     margin: 80px 0px 0px 100px;
 }
 
@@ -173,6 +189,10 @@ h2 {
 
 .skillsDescription {
     display: none;
+}
+
+.skillsDescription.active {
+    display: flex;
     flex-direction: column;
     width: 500px;
     height: 750px;
@@ -200,17 +220,24 @@ h2 {
 
 .code {
     display: none;
+}
+
+.code.active {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 670px;
     height: 750px;
-/background-color: red;
     margin: 80px 0px 0px 40px;
 }
 
 .codeDescription {
     display: none;
+}
+
+.codeDescription.active {
+    display: flex;
     flex-direction: column;
     width: 500px;
     height: 750px;
@@ -243,17 +270,24 @@ code {
 
 .work {
     display: none;
+}
+
+.work.active {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 670px;
     height: 750px;
-/background-color: red;
     margin: 80px 0px 0px 40px;
 }
 
 .workDescription {
     display: none;
+}
+
+.workDescription.active {
+    display: flex;
     flex-direction: column;
     width: 500px;
     height: 750px;
@@ -271,22 +305,28 @@ code {
     background-repeat: no-repeat;
     border-radius: 10px 10px;
     margin-left: 70px;      
-/background-color: red;
 }
 
 .projects {
     display: none;
+}
+
+.projects.active {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 670px;
     height: 750px;
-/background-color: red;
     margin: 80px 0px 0px 40px;
 }
 
 .projectsDescription {
     display: none;
+}
+
+.projectsDescription.active {
+    display: flex;
     flex-direction: column;
     width: 500px;
     height: 750px;
@@ -304,7 +344,6 @@ code {
     background-repeat: no-repeat;
     border-radius: 10px 10px;
     margin-left: 70px;      
-/background-color: green;
 }
 
 .leftButton {
@@ -339,7 +378,6 @@ background-color: white;
     background-size: 50px;
     width: 50px;
     height: 50px;
-/background-color: red;
     background-image: url(../img/sliderNext.svg);
     transform: rotate(180deg);
     background-repeat: no-repeat;
@@ -350,7 +388,6 @@ background-color: white;
     background-size: 50px;
     width: 50px;
     height: 50px;
-/background-color: red;
     background-image: url(../img/sliderNext.svg);
     background-repeat: no-repeat;
 }
@@ -391,17 +428,24 @@ text-decoration:none;
 
 .education {
     display: none;
+}
+
+.education.active {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 670px;
     height: 750px;
-/background-color: red;
     margin: 80px 0px 0px 40px;
 }
 
 .educationDescription {
     display: none;
+}
+
+.educationDescription.active {
+    display: flex;
     flex-direction: column;
     width: 500px;
     height: 750px;
@@ -454,17 +498,24 @@ text-decoration:none;
 }
 
 .engLevel {
+    display: none;
+}
+
+.engLevel.active {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 670px;
     height: 750px;
-/background-color: red;
     margin: 80px 0px 0px 80px;
 }
 
 .engLevelDescription {
+    display: none;
+}
+
+.engLevelDescription.active {
     display: flex;
     flex-direction: column;
     width: 500px;
