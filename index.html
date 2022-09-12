@@ -12,14 +12,14 @@
         <div class="gitLogo"></div>
         <nav class="ulContainer">
             <ul class="ulList">
-                <li id="aboutMe">About me</li>
-                <li id="skill">Skills</li>
-                <li id="code">Code example</li>
-                <li id="work">Work experience</li>
-                <li id="projects">Projects</li>
-                <li id="education">Education</li>
-                <li id="engLvl">English knowleges</li>
-                <li id="contacts">Contacts</li>
+                <li id="1"><a href="#aboutMe">About me</a></li>
+                <li id="2"><a href="#skill">Skills</a></li>
+                <li id="3"><a href="#code">Code example</a></li>
+                <li id="4"><a href="#work">Work experience</a></li>
+                <li id="5"><a href="#projects">Projects</a></li>
+                <li id="6"><a href="#education">Education</a></li>
+                <li id="7"><a href="#engLvl">Knowledge of English</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -27,33 +27,35 @@
     <main class="main">
         <div class="mainContainer">
             <div class="info">
-                <div class="aboutMe active" id="mainInfo">
+                <div class="aboutMe active" id="aboutMe">
                     <div class="aboutMePhoto"></div>
                     <div><h1>Ilya Rakhovich</h1></div>
                 </div>
-                <div class="skills" id="mainInfo">
+                <div class="skills" id="skill">
                     <div class="langLogo"></div>
                 </div>
-                <div class="code" id="mainInfo">
+                <div class="code" id="code">
                     <div class="codeScreen"></div>
                     <div class="codeText"><h2>Code example: change quotes</h2></div>
                 </div>
-                <div class="work" id="mainInfo">
+                <div class="work" id="work">
                     <div class="workLogo"></div>
                 </div>
-                <div class="projects" id="mainInfo">
+                <div class="projects" id="projects">
                     <div class="slider">
-                        <div class="leftButton">
-                            <div class="leftButtonLogo"></div>
-                        </div>
-                        <div class="rightButton">
-                            <div class="rightButtonLogo"></div>
-                        </div>
+                            <div class="leftButton">
+                                <div class="leftButtonLogo"></div>
+                            </div>
+                            <div class ="sliderImage"></div>
+                            <div class="rightButton">
+                                <div class="rightButtonLogo"></div>
+                            </div>
+
                     </div>
                     <div class="textTravel">Travel</div>
                     <div class="textMomentum">Momentum</div>
                 </div>
-                <div class="education" id="mainInfo">
+                <div class="education" id="education">
                     <div class="textEducation"><h2>Belarusian National Technical University</h2></div>
                     <div class="bntuImage"></div>
                     <div class="textEducation"><h2>RS Pre-School</h2></div>
@@ -61,32 +63,32 @@
                     <div class="textEducation"><h2>Epam Git Training</h2></div>
                     <div class="epamImage"></div>
                 </div>
-                <div class="engLevel" id="mainInfo">
+                <div class="engLevel" id="engLvl">
                     <div class="engLevelImage"></div>
                     <div><h2>English knowledges</h2></div>
                 </div>
             </div>
 
             <div class="infoDescription">
-                <div class="aboutMeDescription active" id="description">
+                <div class="aboutMeDescription active" id="aboutMeDescription">
                     <div><h2>About me</h2></div>
                     <div>
-                        <span>
+                        <div>
                             <p>Hi all. My name is Ilya Rakhovich. I am beginner in this area.</p>
                             <p>My goal is to take new knowledges and experience in order to further connect my life with this profession.</p>
-                        </span>
+                        </div>
                     </div>
                 </div>
-                <div class="skillsDescription" id="description">
+                <div class="skillsDescription" id="skillDescription">
                 <div><h2>Skills</h2></div>
-                <div><span>I have basics knowledges:</span></div>
-                    <ul class="ulSkills"> 
+                <div><span>I have basics knowleges:</span></div>
+                    <ol class="ulSkills">
                         <li><b>HTML5</b> <i>(HyperText Markup Language, version 5)</i></li>
                         <li><b>CSS3</b> <i>(Cascading Style Sheets, version 3)</i></li>
                         <li><b>JS</b> <i>(JavaScript)</i></li>
-                    </ul>
+                    </ol>
                 </div>
-                <div class="codeDescription" id="description">
+                <div class="codeDescription" id="codeDescription">
                     <div><h2>Code example</h2></div>
                         <code>
                         async function getQuotes() { <br>
@@ -107,7 +109,7 @@
                           });<br>
                     </code>
                 </div> 
-                <div class="workDescription" id="description">
+                <div class="workDescription" id="workDescription">
                     <div><h2>Work experience</h2></div>
                     <div>
                         <p>From 2016 to the present, I have been working in a large Belarusian company "BELAZ".</p>
@@ -115,14 +117,14 @@
                         <p>I have no experience in programming, but I want to fix this as soon as possible.</p>
                     </div>
                 </div>
-                <div class="projectsDescription" id="description">
+                <div class="projectsDescription" id="projectsDescription">
                     <div><h2>Projects:</h2></div>
                         <ol class="olList">
                             <li><a href ="https://rolling-scopes-school.github.io/shadowroll-JSFEPRESCHOOL2022Q2/travel/">Travel</a></li>
                             <li><a href="https://rolling-scopes-school.github.io/shadowroll-JSFEPRESCHOOL2022Q2/momentum/">Momentum</a></li>
                         </ol>
                 </div>
-                <div class="educationDescription" id="description">
+                <div class="educationDescription" id="educationDescription">
                     <div><h2>Education</h2></div>
                     <div>
                         <p>I have high education. Graduated from the Belarussian National Technical University in 2016.</p>
@@ -130,16 +132,16 @@
                         <p>Completed Git Training (Epam) in September, 2022</p>
                     </div>
                 </div>
-                <div class="engLevelDescription" id="description">
-                    <div><h2>English knowledges</h2></div>
+                <div class="engLevelDescription" id="engLvlDescription">
+                    <div><h2>Knowledge of English</h2></div>
                     <div>
                         <p>English level by <a href="https://www.efset.org/">EF SET </a>(15 min test)</p>
                     </div>
                 </div>
             </div>
-
+        </div>
     </main>
-    <footer class="footer" id="#contacts">
+    <footer class="footer" id="contacts">
         <div class="contactsContainer">    
                 <div class="logoContainer">
                 <div class="phoneLogoContainer">
@@ -152,10 +154,10 @@
                 <a href="https://discordapp.com/users/1014109530205982751/" target="_blank"><div class="discordLogo" ></div></a>
                 <a href="mailto:ilya_rahovich@mail.ru" target="_blank"><div class="mailLogo"></div></a>
                 <a href="https://t.me/admiral13s"><div class="telegramLogo"></div></a>
-                <a href="https://github.com/ShadowRoll"><div class="gitHubLogo"></div></a>
+                <a href="https://github.com/ShadowRoll" target="_blank"><div class="gitHubLogo"></div></a>
             </div>
         </div>
     </footer>
-<script src="js/script.js"></script>
+<script type="module" src="js/script.js"></script>
 </body>
 </html>
