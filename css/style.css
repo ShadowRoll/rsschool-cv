@@ -1,0 +1,662 @@
+@font-face {
+    font-family: "Binerka";  
+    src: url("../fonts/Binerka.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+    width: 1300px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 1300px;
+    background-color: rgb(153, 240, 22);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100px;
+    width: 1200px;
+}
+
+ul {
+    display: flex;
+
+    list-style-type:none;
+    height: 100px;
+    width: 1200px;
+    margin-top: 0px;
+}
+
+.ulList{
+justify-content: space-around;
+align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.ulList > li {
+    display: inline-block;
+    height: auto;
+    width: 140px;
+    font-family: "Binerka";
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    margin-left: -40px;
+}
+
+.ulList > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.ulList > li:enabled{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px 0px white;
+}
+
+.ulList > li:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px 0px white;
+    cursor: pointer;
+}
+
+.gitLogo {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/gitHub.svg);
+    order: 0;
+}
+
+.gitLogo.active {
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/gitHubActive.png);
+    order: 0;
+}
+
+.main {
+    display: flex;
+    height: 888px;
+    width: 1300px;
+}
+
+.mainContainer {
+    display: flex;
+    width: 1300px;
+    height: 1000px;
+    background-image: url(../img/background1.png);
+    background-size: 1300px;
+    background-repeat: no-repeat ;
+}
+
+.info {
+    display: flex;
+    height: 1000px;
+    width: 670px;
+}
+
+.infoDescription {
+    display: flex;
+    height: 1000px;
+    width: 630px;
+    font-family: "Binerka";
+    font-size: 18px;
+}
+
+.aboutMe {
+    display: none;
+}
+
+.aboutMe.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 750px;
+    margin: 80px 0px 0px 100px;
+}
+
+.aboutMePhoto{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/photo.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    border-radius: 150px;
+    box-shadow: 1px 1px 20px 15px white;
+}
+
+.aboutMeDescription {
+    display: none;
+}
+
+.aboutMeDescription.active {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+h1 {
+    font-family: "Binerka";
+    font-size: 36px;
+}
+
+h2 {
+    font-family: "Binerka";
+    font-size: 24px;
+    text-align: center;
+}
+
+.skills {
+    display: none;
+}
+
+.skills.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 750px;
+    margin: 80px 0px 0px 100px;
+}
+
+.langLogo {
+    display: flex;
+    width: 450px;
+    height: 500px;
+    background-image: url(../img/langLogo.png);
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+
+.skillsDescription {
+    display: none;
+}
+
+.skillsDescription.active {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ulSkills {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: space-around;
+    font-family: "Binerka";
+    font-size: 18px;
+    color: black;
+}
+
+.ulSkills > li > b > i{
+    display: flex;
+    font-size: 18px;
+    color: black;
+}
+
+.code {
+    display: none;
+}
+
+.code.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+    height: 750px;
+    margin: 80px 0px 0px 40px;
+}
+
+.codeDescription {
+    display: none;
+}
+
+.codeDescription.active {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+.codeScreen{
+    display: flex;
+    width: 450px;
+    height: 230px;
+    background-image: url(../img/codeExample.jpg);
+    background-size: 450px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px;
+    margin-left: 70px;
+    box-shadow: 1px 1px 20px 15px white;      
+}
+
+.codeText {
+    display: flex;
+    margin-left: 60px;
+}
+
+code {
+    font-size: 18px;
+    text-align:left;
+}
+
+.work {
+    display: none;
+}
+
+.work.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+    height: 750px;
+    margin: 80px 0px 0px 40px;
+}
+
+.workDescription {
+    display: none;
+}
+
+.workDescription.active {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+.workLogo{
+    display: flex;
+    width: 400px;
+    height: 230px;
+    background-image: url(../img/belazLogo.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px;
+    margin-left: 70px;      
+}
+
+.projects {
+    display: none;
+}
+
+.projects.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+    height: 750px;
+    margin: 80px 0px 0px 40px;
+}
+
+.projectsDescription {
+    display: none;
+}
+
+.projectsDescription.active {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+.slider{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px 10px;
+    margin-left: 70px;
+}
+
+.sliderImage{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px;
+    margin-left: -50px;
+    margin-right: -50px;
+    overflow: hidden;
+    transition: all 3s ease;
+}
+
+.leftButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 200px;
+    border-radius: 10px 0px 0px 10px;
+    opacity: 0.4;
+}
+
+.rightButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 200px;
+    border-radius: 0px 10px 10px 0px;
+    opacity: 0.4;
+}
+ .leftButton:hover,
+ .rightButton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.leftButtonLogo{
+    display: flex;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/sliderNext.svg);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    transition: all 3s ease;
+}
+
+.rightButtonLogo{
+    display: flex;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/sliderNext.svg);
+    background-repeat: no-repeat;
+    transition: all 3s ease;
+}
+
+.olList {
+}
+
+.olList > li > a{
+    display: flex;
+    font-family: "Binerka";
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.olList > li > a:hover{
+    text-decoration: underline;
+}
+
+.textTravel{
+    display: none;
+}
+
+.textTravel.active {
+    display: inline;
+    font-family: "Binerka";
+    font-size: 24px;
+    color: black;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.textMomentum {
+    display: none;
+}
+
+.textMomentum.active {
+    display: inline;
+    font-family: "Binerka";
+    font-size: 24px;
+    color: black;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.education {
+    display: none;
+}
+
+.education.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+    height: 750px;
+    margin: 80px 0px 0px 40px;
+}
+
+.educationDescription {
+    display: none;
+}
+
+.educationDescription.active {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+.textEducation {
+    display: inline;
+    font-family: "Binerka";
+    font-size: 24px;
+    color: black;
+    margin-left: 60px;
+}
+
+.bntuImage{
+    display: flex;
+    width: 250px;
+    height: 280px;
+    background-image: url(../img/bntuLogo.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    margin-left: 60px;
+    box-shadow: 1px 1px 20px 15px white;
+}
+
+.rsschoolImage{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/rsPreSchool.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-left: 60px;
+    box-shadow: 1px 1px 20px 15px white;
+}
+
+.epamImage {
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-image: url(../img/epamGit.jpg);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-left: 60px;
+    box-shadow: 1px 1px 20px 15px white;
+}
+
+.engLevel {
+    display: none;
+}
+
+.engLevel.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+    height: 750px;
+    margin: 80px 0px 0px 80px;
+}
+
+.engLevelDescription {
+    display: none;
+}
+
+.engLevelDescription.active {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+.engLevelImage{
+    display: flex;
+    width: 400px;
+    height: 240px;
+    background-image: url(../img/engLevel.jpg);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 20px 15px white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    height: 112px;
+    background-color: black;
+    color: white;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 90px;
+    width: 1000px;
+    font-family: "Binerka";
+    font-size: 36px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.phoneLogoContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    height: 20px;
+    width: 200px;
+    margin-left: 0px;
+}
+
+.phoneLogo{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/phone.png);
+}
+
+.phoneNumber {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.discordLogo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/discord.png);
+}
+
+.discordLogo:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+.mailLogo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/mail.png);
+    background-size: 60px;
+}
+
+.mailLogo:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+.telegramLogo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/telegram.png);
+}
+
+.telegramLogo:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+.gitHubLogo{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-image: url(../img/github.png);
+}
+
+.gitHubLogo:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
