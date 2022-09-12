@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="gitLogo"></div>
+        <nav class="ulContainer">
+            <ul class="ulList">
+                <li id="1"><a href="#aboutMe">About me</a></li>
+                <li id="2"><a href="#skill">Skills</a></li>
+                <li id="3"><a href="#code">Code example</a></li>
+                <li id="4"><a href="#work">Work experience</a></li>
+                <li id="5"><a href="#projects">Projects</a></li>
+                <li id="6"><a href="#education">Education</a></li>
+                <li id="7"><a href="#engLvl">Knowledge of English</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="mainContainer">
+            <div class="info">
+                <div class="aboutMe active" id="aboutMe">
+                    <div class="aboutMePhoto"></div>
+                    <div><h1>Ilya Rakhovich</h1></div>
+                </div>
+                <div class="skills" id="skill">
+                    <div class="langLogo"></div>
+                </div>
+                <div class="code" id="code">
+                    <div class="codeScreen"></div>
+                    <div class="codeText"><h2>Code example: change quotes</h2></div>
+                </div>
+                <div class="work" id="work">
+                    <div class="workLogo"></div>
+                </div>
+                <div class="projects" id="projects">
+                    <div class="slider">
+                            <div class="leftButton">
+                                <div class="leftButtonLogo"></div>
+                            </div>
+                            <div class ="sliderImage"></div>
+                            <div class="rightButton">
+                                <div class="rightButtonLogo"></div>
+                            </div>
+
+                    </div>
+                    <div class="textTravel">Travel</div>
+                    <div class="textMomentum">Momentum</div>
+                </div>
+                <div class="education" id="education">
+                    <div class="textEducation"><h2>Belarusian National Technical University</h2></div>
+                    <div class="bntuImage"></div>
+                    <div class="textEducation"><h2>RS Pre-School</h2></div>
+                    <div class="rsschoolImage"></div>
+                    <div class="textEducation"><h2>Epam Git Training</h2></div>
+                    <div class="epamImage"></div>
+                </div>
+                <div class="engLevel" id="engLvl">
+                    <div class="engLevelImage"></div>
+                    <div><h2>English knowledges</h2></div>
+                </div>
+            </div>
+
+            <div class="infoDescription">
+                <div class="aboutMeDescription active" id="aboutMeDescription">
+                    <div><h2>About me</h2></div>
+                    <div>
+                        <div>
+                            <p>Hi all. My name is Ilya Rakhovich. I am beginner in this area.</p>
+                            <p>My goal is to take new knowledges and experience in order to further connect my life with this profession.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillsDescription" id="skillDescription">
+                <div><h2>Skills</h2></div>
+                <div><span>I have basics knowleges:</span></div>
+                    <ol class="ulSkills">
+                        <li><b>HTML5</b> <i>(HyperText Markup Language, version 5)</i></li>
+                        <li><b>CSS3</b> <i>(Cascading Style Sheets, version 3)</i></li>
+                        <li><b>JS</b> <i>(JavaScript)</i></li>
+                    </ol>
+                </div>
+                <div class="codeDescription" id="codeDescription">
+                    <div><h2>Code example</h2></div>
+                        <code>
+                        async function getQuotes() { <br>
+                            const quotes = 'https://api.quotable.io/random';<br>
+                            const res = await fetch(quotes);<br>
+                            const data = await res.json(); <br>
+                            <br>
+                            quote.textContent = `${(data.content)}`;<br>
+                            author.textContent = `${(data.author)}`;<br>
+                          }<br>
+                          getQuotes();<br>
+                          <br>
+                          quote.addEventListener('change', function(){<br>
+                            getQuotes()<br>
+                          });<br>
+                          changeQuote.addEventListener('click', function(){<br>
+                            getQuotes()<br>
+                          });<br>
+                    </code>
+                </div> 
+                <div class="workDescription" id="workDescription">
+                    <div><h2>Work experience</h2></div>
+                    <div>
+                        <p>From 2016 to the present, I have been working in a large Belarusian company "BELAZ".</p>
+                        <p>My work is related to payroll. My position is lead engineer.</p>
+                        <p>I have no experience in programming, but I want to fix this as soon as possible.</p>
+                    </div>
+                </div>
+                <div class="projectsDescription" id="projectsDescription">
+                    <div><h2>Projects:</h2></div>
+                        <ol class="olList">
+                            <li><a href ="https://rolling-scopes-school.github.io/shadowroll-JSFEPRESCHOOL2022Q2/travel/">Travel</a></li>
+                            <li><a href="https://rolling-scopes-school.github.io/shadowroll-JSFEPRESCHOOL2022Q2/momentum/">Momentum</a></li>
+                        </ol>
+                </div>
+                <div class="educationDescription" id="educationDescription">
+                    <div><h2>Education</h2></div>
+                    <div>
+                        <p>I have high education. Graduated from the Belarussian National Technical University in 2016.</p>
+                        <p>Completed RS Pre-School in June-September, 2022</p>
+                        <p>Completed Git Training (Epam) in September, 2022</p>
+                    </div>
+                </div>
+                <div class="engLevelDescription" id="engLvlDescription">
+                    <div><h2>Knowledge of English</h2></div>
+                    <div>
+                        <p>English level by <a href="https://www.efset.org/">EF SET </a>(15 min test)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="contactsContainer">    
+                <div class="logoContainer">
+                <div class="phoneLogoContainer">
+                    <div class="phoneLogo"></div>
+                    <div class="phoneNumber">
+                        <div>+375 (44) 591-17-92</div>
+                        <div>+375 (25) 758-18-62</div>
+                    </div>
+                </div>
+                <a href="https://discordapp.com/users/1014109530205982751/" target="_blank"><div class="discordLogo" ></div></a>
+                <a href="mailto:ilya_rahovich@mail.ru" target="_blank"><div class="mailLogo"></div></a>
+                <a href="https://t.me/admiral13s"><div class="telegramLogo"></div></a>
+                <a href="https://github.com/ShadowRoll" target="_blank"><div class="gitHubLogo"></div></a>
+            </div>
+        </div>
+    </footer>
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
