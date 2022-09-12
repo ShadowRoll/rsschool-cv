@@ -26,7 +26,7 @@ function multiply(a, b){
 Programmer by profession - **none**.
 
 ## Projects
-[My CV project on the GitHub](https://github.com/ShadowRoll/rsschool-cv/blob/gh-pages/CV.md)
+[My CV project on the GitHub](https://github.com/ShadowRoll/rsschool-cv/blob/gh-pages/cv.md)
 
 ## Education
 I have high education. Graduated from the Belarussian National Technical University in 2015.
