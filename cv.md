@@ -6,6 +6,7 @@
 - Phone number: +375 (44) 591-17-92
 - Discord: Ilya (@shadowroll)
 - Mail: ilya_rahovich@mail.ru
+- Telegram: admiral13s
 
 ## About me
     I am beginner in this area. My goal is to take new knowledge and experience in order to further connect my life with this profession.
