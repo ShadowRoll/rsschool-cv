@@ -15,6 +15,7 @@
 I have basics knowledges 
 - HTML
 - CSS
+- JS
 
 ## Code example
 ```
